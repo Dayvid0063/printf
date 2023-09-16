@@ -41,7 +41,7 @@ int flags, int width, int precision, int size)
 {
 int u = BUFF_SIZE - 2;
 unsigned long int v = va_arg(types, unsigned long int);
-unsigned long int w = num;
+unsigned long int init_num = num;
 UNUSED(width);
 v = convert_size_unsgnd(v, size);
 if (v == 0)
@@ -52,7 +52,7 @@ while (v > 0)
 buffer[u--] = (v % 8) + '0';
 v /= 8;
 }
-if (flags & F_HASH && w != 0)
+if (flags & F_HASH && init_num != 0)
 buffer[u--] = '0';
 u++;
 return (write_unsgnd(0, u, buffer, flags, width, precision, size));
@@ -106,7 +106,7 @@ int flags, char flag_ch, int width, int precision, int size)
 {
 int u = BUFF_SIZE - 2;
 unsigned long int v = va_arg(types, unsigned long int);
-unsigned long int w = num;
+unsigned long int init_num = num;
 UNUSED(width);
 v = convert_size_unsgnd(v, size);
 if (v == 0)
@@ -117,7 +117,7 @@ while (v > 0)
 buffer[u--] = map_to[v % 16];
 v /= 16;
 }
-if (flags & F_HASH && w != 0)
+if (flags & F_HASH && init_num != 0)
 {
 buffer[u--] = flag_ch;
 buffer[u--] = '0';
