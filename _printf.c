@@ -32,7 +32,7 @@ width = get_width(format, &u, list);
 precision = get_precision(format, &u, list);
 size = get_size(format, &u);
 ++u;
-w = handle_print(format, &u, list, buffer, flags, width, precisionn, size);
+w = handle_print(format, &u, list, buffer, flags, width, precision, size);
 if (w == -1)
 return (-1);
 v += w;
