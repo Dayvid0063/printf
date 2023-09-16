@@ -86,7 +86,7 @@ return (write(1, buffer, u + t));
 int print_reverse(va_list types, char buffer[],
 int flags, int width, int precision, int size)
 {
-char *str;
+char *string;
 int u, c = 0;
 UNUSED(buffer);
 UNUSED(flags);
@@ -154,5 +154,5 @@ write(1, &a, 1);
 c++;
 }
 }
-return (t);
+return (c);
 }
