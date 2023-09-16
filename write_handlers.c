@@ -17,7 +17,6 @@ int u = 0;
 char padd = ' ';
 UNUSED(precision);
 UNUSED(size);
-A
 if (flags & F_ZERO)
 padd = '0';
 buffer[u++] = c;
