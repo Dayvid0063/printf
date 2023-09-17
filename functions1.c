@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * print_unsigned - Func print unsigned num
- * @types: List arguments
- * @buffer: Buffer array
- * @flags:  Calculation of flags
- * @width: The width
- * @precision: Precision
- * @size: Size
+ * print_unsigned - Func print unsigned num.
+ * @types: List arguments.
+ * @buffer: Buffer array.
+ * @flags:  Calculations of flags.
+ * @width: The width.
+ * @precision: Precision.
+ * @size: Size.
  * Return: Num of chars
  */
 int print_unsigned(va_list types, char buffer[],
@@ -28,12 +28,12 @@ return (write_unsgnd(0, u, buffer, flags, width, precision, size));
 }
 /**
  * print_octal - Func print unsigned num in octal not.
- * @types: Lista arguments
- * @buffer: Buffer array
- * @flags:  Calculation of flags
- * @width: The width
- * @precision: Precision
- * @size: Size
+ * @types: Lista arguments.
+ * @buffer: Buffer array.
+ * @flags:  Calculations of flags.
+ * @width: The width.
+ * @precision: Precision.
+ * @size: Size.
  * Return: Num of chars
  */
 int print_octal(va_list types, char buffer[],
@@ -58,13 +58,13 @@ u++;
 return (write_unsgnd(0, u, buffer, flags, width, precision, size));
 }
 /**
- * print_hexadecimal - Func print unsigned num in hexadecimal
- * @types: List arguments
- * @buffer: Buffer array
- * @flags:  Calculation of flags
- * @width: The width
- * @precision: Precision
- * @size: Size
+ * print_hexadecimal - Func print unsigned num in hexadecimal.
+ * @types: List arguments.
+ * @buffer: Buffer array.
+ * @flags:  Calculations of flags.
+ * @width: The width.
+ * @precision: Precision.
+ * @size: Size.
  * Return: Num of chars
  */
 int print_hexadecimal(va_list types, char buffer[],
@@ -90,15 +90,15 @@ return (print_hexa(types, "0123456789ABCDEF", buffer,
 flags, 'X', width, precision, size));
 }
 /**
- * print_hexa - Func print a hexadecimal num in lower or upper
- * @types: List arguments
- * @map_to: Values to map
+ * print_hexa - Func print a hexadecimal num in lower or upper.
+ * @types: List arguments.
+ * @map_to: Values to map.
  * @buffer: Buffer array
- * @flags:  Calculation of flags
- * @flag_ch: Calculation of flags
- * @width: The width
- * @precision: Precision
- * @size: Size
+ * @flags:  Calculations of flags.
+ * @flag_ch: Calculations of flags.
+ * @width: The width.
+ * @precision: Precision.
+ * @size: Size.
  * Return: Num of chars
  */
 int print_hexa(va_list types, char map_to[], char buffer[],

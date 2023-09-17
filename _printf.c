@@ -1,9 +1,9 @@
 #include "main.h"
 void print_buffer(char buffer[], int *buff_ind);
 /**
- * _printf - Printf func
- * @format: the fmt
- * Return: Chars printed
+ * _printf - Printf func.
+ * @format: the fmt.
+ * Return: Chars printed.
  */
 int _printf(const char *format, ...)
 {
@@ -43,9 +43,9 @@ va_end(list);
 return (v);
 }
 /**
- * print_buffer - Prints buffer contents
- * @buffer: Ar of characters
- * @buff_ind: Index adds char, show the length
+ * print_buffer - Prints buffer contents.
+ * @buffer: Ar of characters.
+ * @buff_ind: Index adds char, shows the length.
  */
 void print_buffer(char buffer[], int *buff_ind)
 {

@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * handle_write_char - Func prints a str
- * @c: char type
- * @buffer: Buffer array
- * @flags:  Calculation of flags
- * @width: The width
- * @precision: Precision
- * @size: Size
+ * handle_write_char - Func prints a str.
+ * @c: char type.
+ * @buffer: Buffer array.
+ * @flags:  Calculations of flags.
+ * @width: The width.
+ * @precision: Precision.
+ * @size: Size.
  *
  * Return: Num of chars
  */
@@ -36,14 +36,14 @@ write(1, &buffer[0], 1));
 return (write(1, &buffer[0], 1));
 }
 /**
- * write_number - Func prints a str
- * @is_negative: List arguments
- * @ind: char type
- * @buffer: Buffer array
- * @flags:  Calculation of flags
- * @width: The width
- * @precision: Precision
- * @size: Size
+ * write_number - Func prints a str.
+ * @is_negative: List arguments.
+ * @ind: char type.
+ * @buffer: Buffer array.
+ * @flags:  Calculations of flags.
+ * @width: The width.
+ * @precision: Precision.
+ * @size: Size.
  *
  * Return: Num of chars
  */
@@ -65,15 +65,15 @@ return (write_num(ind, buffer, flags, width, precision,
 length, padd, h));
 }
 /**
- * write_num - Func writes a num
- * @ind: Index
- * @buffer: Buffer array
- * @flags: Calculation of flag
- * @width: The width
- * @prec: Precision
- * @length: Length num
- * @padd: Char padding
- * @extra_c: Extra char
+ * write_num - Func writes a num.
+ * @ind: Index.
+ * @buffer: Buffer array.
+ * @flags: Calculations of flag.
+ * @width: The width.
+ * @prec: Precision.
+ * @length: Length num.
+ * @padd: Char padding.
+ * @extra_c: Extra char.
  * Return: Num of chars
  */
 int write_num(int ind, char buffer[],
@@ -121,14 +121,14 @@ buffer[--ind] = extra_c;
 return (write(1, &buffer[ind], length));
 }
 /**
- * write_unsgnd - Func writes an unsigned num
- * @is_negative: Num shows negative
- * @ind: Index
- * @buffer: Buffer array
- * @flags: Calculation of flags
- * @width: The width
- * @precision: Precision
- * @size: Size
+ * write_unsgnd - Func writes an unsigned num.
+ * @is_negative: Num shows negative.
+ * @ind: Index.
+ * @buffer: Buffer array.
+ * @flags: Calculations of flags.
+ * @width: The width.
+ * @precision: Precision.
+ * @size: Size.
  *
  * Return: Num of chars
  */
@@ -169,15 +169,15 @@ return (write(1, &buffer[0], u) + write(1, &buffer[ind], length));
 return (write(1, &buffer[ind], length));
 }
 /**
- * write_pointer - Func write a ptr
- * @buffer: Buffer array
- * @ind: Index
- * @length: Length
- * @width: The width
- * @flags: Calculation of flags
- * @padd: Char padding
- * @extra_c: Extra char
- * @padd_start: Index padding start
+ * write_pointer - Func write a ptr.
+ * @buffer: Buffer array.
+ * @ind: Index.
+ * @length: Length.
+ * @width: The width.
+ * @flags: Calculations of flags.
+ * @padd: Char padding.
+ * @extra_c: Extra char.
+ * @padd_start: Index padding start.
  *
  * Return: Num of chars
  */

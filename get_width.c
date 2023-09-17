@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * get_width - Func prints width
- * @format: Fmtted str
- * @i: List arguments
- * @list: list arguments
- * Return: The width
+ * get_width - Func prints width.
+ * @format: Fmtted str.
+ * @i: List arguments.
+ * @list: list arguments.
+ * Return: The width.
  */
 int get_width(const char *format, int *i, va_list list)
 {

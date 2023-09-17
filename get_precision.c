@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * get_precision - Func calculates precision
- * @format: Fmtted str
- * @i: List arguments
- * @list: list arguments
+ * get_precision - Func calculates the precision.
+ * @format: Fmtted str.
+ * @i: List arguments.
+ * @list: list arguments.
  *
- * Return: The precision
+ * Return: The precision.
  */
 int get_precision(const char *format, int *i, va_list list)
 {

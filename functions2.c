@@ -1,13 +1,13 @@
 #include "main.h"
 /**
- * print_pointer - Func prints ptr value
- * @types: List arguments
- * @buffer: Buffer array
- * @flags:  Calculation of flags
- * @width: The width
- * @precision: Precision
- * @size: Size
- * Return: Num of chars
+ * print_pointer - Func prints ptr value.
+ * @types: List arguments.
+ * @buffer: Buffer array.
+ * @flags:  Calculation of flags.
+ * @width: The width.
+ * @precision: Precision.
+ * @size: Size.
+ * Return: Num of chars.
  */
 int print_pointer(va_list types, char buffer[],
 int flags, int width, int precision, int size)
@@ -43,13 +43,13 @@ width, flags, d, y, p));
 }
 /**
  * print_non_printable - Func prints ascii codes ...
- * @types: List arguments
- * @buffer: Buffer array
- * @flags:  Calculation of flags
- * @width: The width
- * @precision: Precision
- * @size: Size
- * Return: Num of chars
+ * @types: List arguments.
+ * @buffer: Buffer array.
+ * @flags:  Calculation of flags.
+ * @width: The width.
+ * @precision: Precision.
+ * @size: Size.
+ * Return: Num of chars.
  */
 int print_non_printable(va_list types, char buffer[],
 int flags, int width, int precision, int size)
@@ -74,14 +74,14 @@ buffer[u + t] = '\0';
 return (write(1, buffer, u + t));
 }
 /**
- * print_reverse - Func print reverse str
- * @types: List arguments
- * @buffer: Buffer array
- * @flags:  Calculation of flags
- * @width: The width
- * @precision: Precision
- * @size: Size
- * Return: Num of chars
+ * print_reverse - Func print reverse str.
+ * @types: List arguments.
+ * @buffer: Buffer array.
+ * @flags:  Calculation of flags.
+ * @width: The width.
+ * @precision: Precision.
+ * @size: Size.
+ * Return: Num of chars.
  */
 int print_reverse(va_list types, char buffer[],
 int flags, int width, int precision, int size)
@@ -109,14 +109,14 @@ c++;
 return (c);
 }
 /**
- * print_rot13string - Func print str in rot13
- * @types: List arguments
- * @buffer: Buffer array
- * @flags:  Calculation of flags
- * @width: The width
- * @precision: Precision
- * @size: Size
- * Return: Num of chars
+ * print_rot13string - Func print str in rot13.
+ * @types: List arguments.
+ * @buffer: Buffer array.
+ * @flags:  Calculation of flags.
+ * @width: The width.
+ * @precision: Precision.
+ * @size: Size.
+ * Return: Num of chars.
  */
 int print_rot13string(va_list types, char buffer[],
 int flags, int width, int precision, int size)

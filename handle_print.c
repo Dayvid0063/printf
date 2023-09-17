@@ -1,14 +1,14 @@
 #include "main.h"
 /**
- * handle_print - Func prints an argument
- * @fmt: Fmtted str
- * @list: List arguments
- * @ind: ind
- * @buffer: Buffer array
- * @flags: Calculation of flags
- * @width: The width
- * @precision: Precision
- * @size: Size
+ * handle_print - Func prints an argument.
+ * @fmt: Fmtted str.
+ * @list: Lists arguments.
+ * @ind: ind.
+ * @buffer: Buffer array.
+ * @flags: Calculation of flags.
+ * @width: The width.
+ * @precision: Precision.
+ * @size: Size.
  * Return: 1 or 2;
  */
 int handle_print(const char *fmt, int *ind, va_list list, char buffer[],

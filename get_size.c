@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * get_size - Func prints size
- * @format: Fmtted str
- * @i: List arguments
+ * get_size - Func prints size.
+ * @format: Fmtted str.
+ * @i: Lists arguments.
  *
  * Return: The size
  */
