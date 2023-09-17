@@ -1,1 +1,1 @@
-My Printf Team Project by ORJI DAVID and OJINGIRI HANNAH
+A project created by Ojingiri Hannah and Orji David
