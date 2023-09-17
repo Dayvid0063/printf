@@ -2,12 +2,12 @@
 void print_buffer(char buffer[], int *buff_ind);
 /**
  * _printf - Printf func.
- * @format: the fmt.
+ * @format: The fmt.
  * Return: Chars printed.
  */
 int _printf(const char *format, ...)
 {
-int u, w = 0, v = 0;
+int u, printed = 0, printed_chars = 0;
 int flags, width, precision, size, buff_ind = 0;
 va_list list;
 char buffer[BUFF_SIZE];
@@ -22,7 +22,7 @@ buffer[buff_ind++] = format[u];
 if (buff_ind == BUFF_SIZE)
 print_buffer(buffer, &buff_ind);
 /* write(1, &format[u], 1);*/
-v++;
+printed_chars++;
 }
 else
 {
@@ -32,15 +32,15 @@ width = get_width(format, &u, list);
 precision = get_precision(format, &u, list);
 size = get_size(format, &u);
 ++u;
-w = handle_print(format, &u, list, buffer, flags, width, precision, size);
-if (w == -1)
+printed = handle_print(format, &u, list, buffer, flags, width, precision, size);
+if (printed == -1)
 return (-1);
-v += w;
+printed_chars += printed;
 }
 }
 print_buffer(buffer, &buff_ind);
 va_end(list);
-return (v);
+return (printed_chars);
 }
 /**
  * print_buffer - Prints buffer contents.
