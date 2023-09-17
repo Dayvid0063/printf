@@ -2,8 +2,10 @@
 void print_buffer(char buffer[], int *buff_ind);
 /**
  * _printf - Printf func.
- * @format: The fmt.
- * Return: Chars printed.
+ * @format: Format style.
+ * @...: Flags, Width, Precision, Size
+ *
+ * Return: Num of chars printed.
  */
 int _printf(const char *format, ...)
 {
