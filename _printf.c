@@ -1,5 +1,7 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdarg.h>
+
 void print_buffer(char buffer[], int *buff_ind);
 /**
  * _printf - Printf func.
