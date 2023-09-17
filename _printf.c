@@ -1,10 +1,9 @@
 #include "main.h"
+#include <stdio.h>
 void print_buffer(char buffer[], int *buff_ind);
 /**
  * _printf - Printf func.
  * @format: Format style.
- * @...: Flags, Width, Precision, Size
- *
  * Return: Num of chars printed.
  */
 int _printf(const char *format, ...)
